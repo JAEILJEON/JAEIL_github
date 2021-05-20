@@ -5,7 +5,7 @@ how to commit git hub
 
 2. git add .
 
-3. git commit -m 'name'
+3. git commit -m 'algorithm studying'
 
 4. git push origin master
 
