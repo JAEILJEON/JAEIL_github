@@ -115,3 +115,57 @@ for i in range(1, len(s)-1):
 
 print(min(data1, data0))
 '''
+# 코드업 6092
+# 이것도 맞혔다. 실력이 늘긴 했군!
+'''
+n = int(input())
+li = list(map(int, input().split()))
+
+count = []
+
+for i in range(23):
+    count.append(0)
+
+for j in li:
+    count[j-1] += 1
+
+for x in count:
+    print(x, end = ' ')
+'''
+# 코드업 6094
+# 음 너무 쉽고..
+'''
+n = int(input())
+li = list(map(int, input().split()))
+count = []
+
+for i in li:
+    count.append(i)
+
+print(min(count))
+'''
+# 코드업 6096
+
+n  = int(input()) # 몇번 실행할 건지
+count = []
+
+for i in range(19):
+    count.append([])
+    for j in range(19):
+        count[i].append(0)
+
+for i in range(n):
+    x, y = map(int, input().split())
+
+for i in range(19):
+    count[i][y-1] = 1
+    for j in range(19):
+        count[x-1][i] = 1
+
+    
+for i in range(19):
+    for j in range(19):
+        print(count[i][j
+                       ], end = ' ')
+    print()
+
